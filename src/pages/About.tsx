@@ -1,7 +1,7 @@
 import { siteConfig } from '../site.config'
 import { useLocale } from '../hooks/useLocale'
 import { SocialLinks } from '../components/SocialLinks'
-import { Measure, Page } from '../components/Container'
+import { Page } from '../components/Container'
 import { PageHeader } from '../components/PageHeader'
 
 export function About() {
@@ -10,10 +10,7 @@ export function About() {
   return (
     <Page>
       <PageHeader title={t('home.about')} />
-      <Measure>
-        {/* balance：中文可在任意漢字間斷行，短段落容易斷得很不平均 */}
-        <p className="leading-[1.9] text-balance">{siteConfig.about[locale]}</p>
-      </Measure>
+      <p className="leading-[1.9]">{siteConfig.about[locale]}</p>
       <div className="mt-8">
         <SocialLinks />
       </div>

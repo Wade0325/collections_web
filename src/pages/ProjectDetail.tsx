@@ -27,8 +27,7 @@ export function ProjectDetail() {
 
   return (
     <Page>
-      {/* 與 Measure 同寬，讓內文左邊界對齊 Header */}
-      <article className="max-w-[42rem]">
+      <article>
         <Link
           to="/projects"
           className="text-muted hover:text-accent inline-flex items-center gap-1.5 text-sm transition-colors"

@@ -4,7 +4,7 @@ import { useLocale } from '../hooks/useLocale'
 import { getFeaturedProjects, getProjects } from '../lib/posts'
 import { ProjectCard } from '../components/ProjectCard'
 import { SocialLinks } from '../components/SocialLinks'
-import { Measure, Page } from '../components/Container'
+import { Page } from '../components/Container'
 
 export function Home() {
   const { locale, t } = useLocale()
@@ -17,14 +17,10 @@ export function Home() {
   return (
     <Page>
       <section className="mb-14 sm:mb-18">
-        <Measure>
-          <h1 className="text-fg text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-[2.5rem]">
-            {siteConfig.headline[locale]}
-          </h1>
-          <p className="text-muted mt-4 leading-relaxed text-balance">
-            {siteConfig.intro[locale]}
-          </p>
-        </Measure>
+        <h1 className="text-fg text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-[2.5rem]">
+          {siteConfig.headline[locale]}
+        </h1>
+        <p className="text-muted mt-4 leading-relaxed">{siteConfig.intro[locale]}</p>
         <div className="mt-7">
           <SocialLinks />
         </div>

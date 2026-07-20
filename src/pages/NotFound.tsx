@@ -7,7 +7,7 @@ export function NotFound() {
 
   return (
     <Page>
-      <div className="max-w-[42rem] py-12">
+      <div className="py-12">
         <p className="text-muted font-mono text-5xl">404</p>
         <h1 className="text-fg mt-4 text-2xl font-semibold tracking-tight">
           {t('notfound.title')}
