@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Placeholder cover">
+  <rect width="1600" height="900" fill="#f4f4f5"/>
+  <g fill="none" stroke="#d4d4d8" stroke-width="2">
+    <circle cx="800" cy="450" r="120"/>
+    <circle cx="800" cy="450" r="200"/>
+    <circle cx="800" cy="450" r="280"/>
+  </g>
+  <circle cx="800" cy="450" r="46" fill="#2563eb"/>
+  <text x="800" y="800" text-anchor="middle" font-family="ui-monospace, monospace" font-size="30" fill="#a1a1aa">cover placeholder</text>
+</svg>
