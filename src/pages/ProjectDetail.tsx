@@ -17,7 +17,7 @@ export function ProjectDetail() {
   useEffect(() => {
     if (project) document.title = `${project.title} — Wade`
     return () => {
-      document.title = 'Wade — AI Portfolio'
+      document.title = 'Wade — AI collections'
     }
   }, [project])
 
