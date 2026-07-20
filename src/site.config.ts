@@ -33,7 +33,7 @@ export const siteConfig = {
   /** 關於我區塊 */
   about: {
     zh: '我是一名開發者，在金融業有三年的後端工程師經驗，現在專注在將大型語言模型以及圖像生成模型應用到實際產品中 — 從資料前處理、向量檢索到 prompt 設計與部署，以及相關的工作流自動化與 AI Agent。',
-    en: "I'm a developer with three years of backend engineering experience in finance, now focused on bringing large language models and image generation models into real products — from data preprocessing and vector retrieval to prompt design and deployment.",
+    en: "I'm a developer with three years of backend engineering experience in finance, now focused on bringing large language models and image generation models into real products — from data preprocessing and vector retrieval to prompt design and deployment, along with the workflow automation and AI agents that tie it together.",
   } satisfies LocalizedText,
 
   socials: [
