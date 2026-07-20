@@ -36,6 +36,8 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    /* 永遠保留捲軸空間，避免短頁面（如「關於」）沒有捲軸時版面向右位移 */
+    scrollbar-gutter: stable;
   }
 
   body {
