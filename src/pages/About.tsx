@@ -11,7 +11,8 @@ export function About() {
     <Page>
       <PageHeader title={t('home.about')} />
       <Measure>
-        <p className="leading-[1.9]">{siteConfig.about[locale]}</p>
+        {/* balance：中文可在任意漢字間斷行，短段落容易斷得很不平均 */}
+        <p className="leading-[1.9] text-balance">{siteConfig.about[locale]}</p>
       </Measure>
       <div className="mt-8">
         <SocialLinks />

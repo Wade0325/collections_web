@@ -2,7 +2,7 @@
 title: Agent Workflow Runner
 summary: Define multi-step AI workflows in YAML, with tool calls, retries, and human approval nodes.
 date: 2026-03-02
-tags: [Agent, LLM, TypeScript]
+tags: [Agent, LLM]
 cover: /images/placeholder-3.svg
 github: https://github.com/Wade0325
 featured: true

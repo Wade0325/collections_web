@@ -21,7 +21,9 @@ export function Home() {
           <h1 className="text-fg text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-[2.5rem]">
             {siteConfig.headline[locale]}
           </h1>
-          <p className="text-muted mt-4 leading-relaxed">{siteConfig.intro[locale]}</p>
+          <p className="text-muted mt-4 leading-relaxed text-balance">
+            {siteConfig.intro[locale]}
+          </p>
         </Measure>
         <div className="mt-7">
           <SocialLinks />

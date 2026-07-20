@@ -33,7 +33,7 @@ export function ProjectCard({ project }: { project: Project }) {
           {project.title}
         </h3>
 
-        <p className="text-muted mt-1.5 line-clamp-2 flex-1 text-sm leading-relaxed">
+        <p className="text-muted mt-1.5 line-clamp-2 flex-1 text-sm leading-relaxed text-balance">
           {project.summary}
         </p>
 

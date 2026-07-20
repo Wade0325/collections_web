@@ -11,7 +11,7 @@ export function PageHeader({ title, description }: { title: string; description?
         {title}
       </h1>
       {description && (
-        <p className="text-muted mt-3 max-w-[42rem] leading-relaxed">{description}</p>
+        <p className="text-muted mt-3 max-w-[42rem] leading-relaxed text-balance">{description}</p>
       )}
     </header>
   )

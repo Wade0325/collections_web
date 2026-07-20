@@ -20,8 +20,8 @@ export const siteConfig = {
 
   /** 首頁 Hero 大標 */
   headline: {
-    zh: '我打造 AI 應用與工具。',
-    en: 'I build AI applications and tools.',
+    zh: '紀錄一些 AI 相關的東西',
+    en: 'Notes on the AI things I build.',
   } satisfies LocalizedText,
 
   /** 首頁 Hero 副標，1–2 行 */
@@ -32,8 +32,8 @@ export const siteConfig = {
 
   /** 關於我區塊 */
   about: {
-    zh: '我是一名開發者，日常在做把大型語言模型接進真實產品的事：從資料前處理、向量檢索、提示詞設計到部署維運。喜歡把複雜的系統做得簡單好用。',
-    en: 'I am a developer working on bringing large language models into real products — from data preprocessing and vector retrieval to prompt design and deployment. I like making complex systems feel simple.',
+    zh: '我是一名開發者，在金融業有三年的後端工程師經驗，現在專注在將大型語言模型應用到實際產品中 — 從資料前處理、向量檢索到 prompt 設計與部署。',
+    en: "I'm a developer with three years of backend engineering experience in finance, now focused on bringing large language models into real products — from data preprocessing and vector retrieval to prompt design and deployment.",
   } satisfies LocalizedText,
 
   socials: [

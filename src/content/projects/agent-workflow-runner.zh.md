@@ -2,7 +2,7 @@
 title: Agent 工作流執行器
 summary: 用 YAML 定義多步驟 AI 工作流，支援工具呼叫、重試與人工審核節點。
 date: 2026-03-02
-tags: [Agent, LLM, TypeScript]
+tags: [Agent, LLM]
 cover: /images/placeholder-3.svg
 github: https://github.com/Wade0325
 featured: true

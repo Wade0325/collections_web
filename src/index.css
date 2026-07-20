@@ -46,6 +46,8 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    /* 避免段落最後一行只剩一兩個字 */
+    text-wrap: pretty;
   }
 
   ::selection {
