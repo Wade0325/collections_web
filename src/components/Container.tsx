@@ -14,7 +14,7 @@ export function Container({ children, className = '' }: { children: ReactNode; c
  * 頁面層級的垂直留白。所有頁面用同一組數值，垂直節奏才一致。
  */
 export function Page({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return <Container className={`py-16 sm:py-24 ${className}`}>{children}</Container>
+  return <Container className={`py-10 sm:py-14 ${className}`}>{children}</Container>
 }
 
 /**

@@ -6,7 +6,7 @@ import type { ReactNode } from 'react'
  */
 export function PageHeader({ title, description }: { title: string; description?: ReactNode }) {
   return (
-    <header className="mb-12">
+    <header className="mb-8">
       <h1 className="text-fg text-2xl font-semibold tracking-tight text-balance sm:text-[2rem] sm:leading-tight">
         {title}
       </h1>
