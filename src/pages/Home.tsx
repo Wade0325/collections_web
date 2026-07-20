@@ -4,6 +4,7 @@ import { useLocale } from '../hooks/useLocale'
 import { getFeaturedProjects, getProjects } from '../lib/posts'
 import { ProjectCard } from '../components/ProjectCard'
 import { SocialLinks } from '../components/SocialLinks'
+import { Measure, Page } from '../components/Container'
 
 export function Home() {
   const { locale, t } = useLocale()
@@ -14,31 +15,33 @@ export function Home() {
     featured.length > 0 ? featured : getProjects(locale).slice(0, siteConfig.featuredLimit)
 
   return (
-    <div className="mx-auto max-w-5xl px-5 sm:px-6">
-      <section className="py-20 sm:py-28">
-        <h1 className="text-fg max-w-2xl text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-4xl">
-          {siteConfig.headline[locale]}
-        </h1>
-        <p className="text-muted mt-5 max-w-xl leading-relaxed">{siteConfig.intro[locale]}</p>
+    <Page>
+      <section className="mb-20 sm:mb-28">
+        <Measure>
+          <h1 className="text-fg text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-[2.5rem]">
+            {siteConfig.headline[locale]}
+          </h1>
+          <p className="text-muted mt-5 leading-relaxed">{siteConfig.intro[locale]}</p>
+        </Measure>
         <div className="mt-8">
           <SocialLinks />
         </div>
       </section>
 
-      <section className="pb-8">
-        <div className="mb-6 flex items-baseline justify-between">
+      <section>
+        <div className="mb-8 flex items-baseline justify-between">
           <h2 className="text-fg text-lg font-semibold tracking-tight">{t('home.featured')}</h2>
           <Link to="/projects" className="text-muted hover:text-accent text-sm transition-colors">
             {t('home.viewAll')} →
           </Link>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
       </section>
-    </div>
+    </Page>
   )
 }

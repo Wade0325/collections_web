@@ -2,6 +2,7 @@ import { NavLink } from 'react-router'
 import { siteConfig } from '../site.config'
 import { useLocale } from '../hooks/useLocale'
 import type { StringKey } from '../i18n/strings'
+import { Container } from './Container'
 import { LocaleToggle } from './LocaleToggle'
 import { ThemeToggle } from './ThemeToggle'
 
@@ -16,7 +17,7 @@ export function Header() {
 
   return (
     <header className="bg-page/80 border-line sticky top-0 z-20 border-b backdrop-blur-sm">
-      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-5 sm:px-6">
+      <Container className="flex h-16 items-center justify-between">
         <NavLink to="/" className="text-fg text-[15px] font-semibold tracking-tight">
           {siteConfig.brand}
         </NavLink>
@@ -44,7 +45,7 @@ export function Header() {
           <ThemeToggle />
           <LocaleToggle />
         </div>
-      </div>
+      </Container>
     </header>
   )
 }
