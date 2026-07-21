@@ -16,3 +16,6 @@ Thumbs.db
 
 *.log
 npm-debug.log*
+
+# 本機草稿與 dev server log
+temp/
