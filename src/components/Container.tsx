@@ -7,7 +7,7 @@ import type { ReactNode } from 'react'
  * 寬度只有這一個地方定義 —— 不要在頁面裡另外寫 max-w-*。
  */
 export function Container({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return <div className={`mx-auto w-[85%] ${className}`}>{children}</div>
+  return <div className={`mx-auto w-[65%] ${className}`}>{children}</div>
 }
 
 /**
