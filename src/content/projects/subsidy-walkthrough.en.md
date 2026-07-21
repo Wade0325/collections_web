@@ -1,16 +1,15 @@
 ---
-title: Subsidy Assistant — A User Walkthrough
+title: Subsidy Assistant — Built with Agentic RAG
 summary: Walk the site from a user's point of view: pick a topic, answer questions, get a result, edit and recompute, interject with questions, switch topics.
 date: 2026-07-20
-tags: [RAG, UX, LLM]
+tags: [RAG, LLM]
 cover: /images/walkthrough/a1-首頁.png
 featured: true
 ---
 
 This document walks through the site from an ordinary user's point of view: from opening the page,
 step by step, to getting an estimation result — interjecting with questions along the way, editing
-data and recomputing, switching topics, and finally covering dark mode, the mobile layout, and what
-the screen looks like when the backend is down.
+data and recomputing, and switching topics.
 
 ---
 
@@ -24,8 +23,6 @@ the screen looks like when the backend is down.
 - [Stage 5: interject with a question anytime](#stage-5-interject-with-a-question-anytime)
 - [Stage 6: switch to another subsidy](#stage-6-switch-to-another-subsidy)
 - [Interface options](#interface-options)
-- [Mobile](#mobile)
-- [When things go wrong](#when-things-go-wrong)
 
 ---
 
@@ -110,8 +107,6 @@ In turn choose "none", "no", and enter `1` for household size.
 ![Question 8, income threshold](/images/walkthrough/b9-q8-所得門檻快選.png)
 
 ### Question 8 — household monthly income
-
-This question has a thoughtful design: instead of dryly asking "what's your household income", it **computes the threshold and writes it into the question** —
 
 > Is your household's total monthly income below **61,137**?
 
@@ -314,43 +309,4 @@ The toggle at the top right:
 
 The three columns, citation markers, highlights, and buttons all recolor with it, and this is remembered too.
 
----
-
-## Mobile
-
-![Mobile home page](/images/walkthrough/h1-手機-首頁.png)
-
-At mobile width the three columns stack vertically: Sources → Conversation → What we know so far.
-
-![Mobile questionnaire](/images/walkthrough/h2-手機-問卷.png)
-
-Option buttons wrap automatically, the county dropdown and "⇄ switch topic" work as usual, and the flow is identical to desktop.
-
----
-
-## When things go wrong
-
-If the backend isn't running, the site doesn't turn into a blank screen:
-
-![Backend not connected](/images/walkthrough/i1-後端未連線.png)
-
-The center column explains the situation and the fix directly ("please first run uvicorn app.main:app --port 8000 in the backend directory"), with a "retry connection" button below. The footer's rule version shows "—", indicating it genuinely didn't read backend data.
-
-How a few other situations are handled:
-
-| Situation | What the user sees |
-|---|---|
-| Asking too fast (more than 10 per 5 minutes) | "You're asking a bit fast, please take a break before asking again" |
-| No relevant regulation found | "No relevant regulatory basis found for this question", with a hint to switch topics |
-| Retrieval service temporarily down | "The retrieval service is temporarily unavailable, please try again later" |
-
-These are all normal conversation messages, not error codes or crashed screens.
-
----
-
-### Notes
-
-- Session date 2026-07-20, rule version 2026-07-08
-- Desktop screenshots are 1440 × 900, mobile screenshots are 390 × 844
 - The estimation result is an unofficial estimate; the actual determination is subject to each county government's review
-- To understand how the agent makes its decisions underneath, see the [Agentic RAG walkthrough](#/projects/subsidy-agentic-rag)
